@@ -1,4 +1,4 @@
-# Cartola-Login
+# Login
 
 To start your application server:
 
