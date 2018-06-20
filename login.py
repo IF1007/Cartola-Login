@@ -8,6 +8,7 @@ def init():
     conn = sqlite3.connect(location)
     c = conn.cursor()
     create_database()
+    print('iniciou')
 
 def create_database():
     c.execute('create table if not exists logindb (login, password)')

@@ -1,4 +1,5 @@
 import cherrypy
+import requests
 from signup import SignUp
 from signin import SignIn
 
@@ -18,6 +19,8 @@ conf = {
     },
 }
 cherrypy.quickstart(root, '/', conf)
+
+requests.post("http://naming-service:4000/register?name=login&host=http://login:3000")
 
 # signup request example:
 # curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:3001/signup
