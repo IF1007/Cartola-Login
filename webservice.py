@@ -13,6 +13,7 @@ root.signin = SignIn()
 conf = {    
     'global': {
         'server.socket_port': 3000,
+        'server.socket_host':'0.0.0.0'
     },
     '/': {
         'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
